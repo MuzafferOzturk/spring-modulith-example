@@ -1,0 +1,18 @@
+@startuml
+title Controller
+
+top to bottom direction
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+Container_Boundary("SpringModulithExampleApplication.SpringModulithExampleApplication_boundary", "SpringModulithExampleApplication", $tags="") {
+  Component(SpringModulithExampleApplication.SpringModulithExampleApplication.Application, "Application", "Module", "", $tags="")
+  Component(SpringModulithExampleApplication.SpringModulithExampleApplication.Controller, "Controller", "Module", "", $tags="")
+}
+
+Rel_D(SpringModulithExampleApplication.SpringModulithExampleApplication.Controller, SpringModulithExampleApplication.SpringModulithExampleApplication.Application, "uses", $tags="")
+
+SHOW_LEGEND(true)
+@enduml

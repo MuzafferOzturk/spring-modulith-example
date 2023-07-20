@@ -1,0 +1,11 @@
+[%autowidth.stretch, cols="h,a"]
+|===
+|Base package
+|`com.example.springmodulithexample.controller`
+|Spring components
+|_Controllers_
+
+* `c.e.s.c.OrderController`
+|Bean references
+|* `c.e.s.a.createorder.CreateOrderHandler` (in Application)
+|===

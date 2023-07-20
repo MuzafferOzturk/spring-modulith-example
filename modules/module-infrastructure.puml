@@ -1,0 +1,18 @@
+@startuml
+title Infrastructure
+
+top to bottom direction
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+Container_Boundary("SpringModulithExampleApplication.SpringModulithExampleApplication_boundary", "SpringModulithExampleApplication", $tags="") {
+  Component(SpringModulithExampleApplication.SpringModulithExampleApplication.Domain, "Domain", "Module", "", $tags="")
+  Component(SpringModulithExampleApplication.SpringModulithExampleApplication.Infrastructure, "Infrastructure", "Module", "", $tags="")
+}
+
+Rel_D(SpringModulithExampleApplication.SpringModulithExampleApplication.Infrastructure, SpringModulithExampleApplication.SpringModulithExampleApplication.Domain, "depends on", $tags="")
+
+SHOW_LEGEND(true)
+@enduml

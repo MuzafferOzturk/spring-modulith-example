@@ -1,0 +1,11 @@
+[%autowidth.stretch, cols="h,a"]
+|===
+|Base package
+|`com.example.springmodulithexample.application`
+|Spring components
+|_Services_
+
+* `c.e.s.a.createorder.CreateOrderHandler`
+|Bean references
+|* `c.e.s.d.service.OrderService` (in Domain)
+|===
